@@ -25,16 +25,19 @@ contract Distribution{
     }
 
     //constructor
-    constructor(address _project) {
-        projectAddress=Project(_project);
-        require(projectAddress.alive()==false,"Unavailable Project: Please end the project beforehand.");
-        
-        owner=projectAddress.owner();
-        require(owner==msg.sender,"Access Denied");
-        balance=projectAddress.total();    
+    constructor() {
+        owner=msg.sender;
     }
 
     //functions
+    //set
+    function setProject(address _project) public onlyOwner{
+        projectAddress=Project(_project);
+        require(projectAddress.alive()==false,"Unavailable Project: Please end the project beforehand.");
+        require(projectAddress.owner()==owner,"Access Denied");
+        balance=projectAddress.total();    
+    }
+
     //distribute
     function distribute(address _reciever) public payable onlyOwner{
         //requires

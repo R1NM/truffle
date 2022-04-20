@@ -11,5 +11,10 @@ module.exports = {
       network_id:"5777",
       websockets: true
     }
+  },
+  compilers: {
+    solc: {
+      version: "0.8.7"  // 여기에 필요한 Solidity 버전을 설정
+    }
   }
 };
