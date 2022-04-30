@@ -17,8 +17,7 @@
       "name": "Donate",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -31,8 +30,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -51,8 +49,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_project\",\"type\":\"address\"}],\"name\":\"Donate\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_project\",\"type\":\"address\"}],\"name\":\"getDonation\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTotalDonation\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Donation.sol\":\"Donation\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Donation.sol\":{\"keccak256\":\"0xef143ee09e12eaf6346ce4831678173c14efb824f383c43e38cc9ec10b78976a\",\"license\":\"None\",\"urls\":[\"bzz-raw://03521d4a1b86652fe5d2b30e2c88d7e8cc0ff5e28c09272d88268220a5484fcc\",\"dweb:/ipfs/Qmaf4r6J4s8hBiU6uVFG72fem6T22QWdoeZxkbFoYsTdAV\"]},\"project:/contracts/Project.sol\":{\"keccak256\":\"0xe9cc60979ebd610200020391156274fda2710f92bf24e8a692a0a2eb881cddbb\",\"license\":\"None\",\"urls\":[\"bzz-raw://e1ae6dd2fc9fda5a7c5ba8a91c2a1b0999897999263322f6032f512a1d4e311e\",\"dweb:/ipfs/QmYfMLdKpKkiY8TacCSKfhi1puQBuLPdjb9XmxrcStytPK\"]}},\"version\":1}",
@@ -4538,8 +4535,7 @@
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-04-20T09:05:40.182Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-04-30T02:07:30.098Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

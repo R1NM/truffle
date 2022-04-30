@@ -8,6 +8,7 @@ import AddNewProject from "./component/AddNewProject";
 import NavBar from "./component/NavBar";
 import { VscGithubInverted } from "react-icons/vsc";
 import TimeLine from "./component/TimeLine";
+import BCtest from "./component/BCtest";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/t" element={<TimeLine />} />
           <Route exact path="/manager" element={<AddNewProject />} />
           <Route exact path="/detail/:no/status" element={<DonateStatus />} />
+          <Route exact path="/test" element={<BCtest />} />
         </Routes>
       </body>
       <footer className="footer">
