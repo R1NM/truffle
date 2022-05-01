@@ -1,0 +1,69 @@
+.header {
+  padding: 1rem 2rem;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header select {
+  height: 30px;
+  width: 140px;
+  border-radius: 5px;
+  border: none;
+}
+.Navi {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home {
+  color: white;
+  font-family: "Jalnan";
+  font-weight: bold;
+}
+
+.Navs {
+  color: white;
+  font-family: "Jalnan";
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Navs:hover {
+  color: blue;
+  font-family: "Jalnan";
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+.nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav li a {
+  color: black;
+  font-size: 20px;
+}
+
+#logo {
+  width: 50px;
+  border-radius: 25px;
+}
+
+#mainpage {
+  position: absolute;
+  left: 5%;
+}
+hr {
+  border: 2px solid lightgray;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 84px;
+}

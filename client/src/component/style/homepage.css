@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 1rem;
+  grid-auto-flow: row;
+  padding-top: 50px;
+}
+.title__header {
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: darkgray;
+  text-transform: uppercase;
+  text-align: center;
+}
