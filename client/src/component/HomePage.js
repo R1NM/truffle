@@ -38,7 +38,7 @@ function HomePage() {
   ];
   return (
     <div>
-      <div className="title__header">Let's Go to Donate!</div>
+      <div className="title__header">Le-go!</div>
       <hr />
       <div className="container">
         {projectList.map((project) => {

@@ -4,7 +4,7 @@ import { useLocation, useParams } from "react-router-dom";
 // useLoation, useNavigation 참조 링크
 import { useNavigate } from "react-router-dom";
 import "./style/projectDetail.css";
-import { Button } from "react-bootstrap";
+import { Button, NavItem } from "react-bootstrap";
 
 function ProjectDetail(props) {
   const location = useLocation();
@@ -23,20 +23,32 @@ function ProjectDetail(props) {
       },
     });
   };
+  const donateClick = () => {
+    navigate(`/detail/${project_id}/donate`, {
+      state: {
+        project_id: project_id,
+        project_title: project_title,
+      },
+    });
+  };
 
   return (
-    <div className="prj__detail">
-      <div className="prj__title">{project_title}</div>
-      <div className="prj__header">
-        <img src={project_img} alt="prj-img" className="prj__img" />
-        <div className="prj__buttons">
-          <Button className="prj__button" onClick={handleClick}>
+    <div className="app">
+      <div className="details">
+        <img src={project_img} alt="donate project image" className="big-img" />
+        <div className="box">
+          <div className="row">
+            <h2>{project_title}</h2>
+          </div>
+          <p>{project_description}</p>
+          <Button className="cart" onClick={handleClick}>
             기부 현황
           </Button>
-          <Button className="prj__button">기부 하기</Button>
+          <Button className="cart" onClick={donateClick}>
+            기부 하기
+          </Button>
         </div>
       </div>
-      <h3>{project_description}</h3>
     </div>
   );
 }

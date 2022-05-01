@@ -7,9 +7,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AddNewProject from "./component/AddNewProject";
 import NavBar from "./component/NavBar";
 import { VscGithubInverted } from "react-icons/vsc";
-import TimeLine from "./component/TimeLine";
+import Donate from "./component/Donate";
+import MyPage from "./component/MyPage";
 import BCtest from "./component/BCtest";
-
 function App() {
   return (
     <Router>
@@ -20,9 +20,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/detail/:no" element={<ProjectDetail />} />
-          <Route exact path="/t" element={<TimeLine />} />
+          <Route exact path="/mypage" element={<MyPage />} />
+          <Route exact path="/:no/donate" element={<Donate />} />
           <Route exact path="/manager" element={<AddNewProject />} />
           <Route exact path="/detail/:no/status" element={<DonateStatus />} />
+          <Route exact path="/detail/:no/donate" element={<Donate />} />
           <Route exact path="/test" element={<BCtest />} />
         </Routes>
       </body>
