@@ -35,7 +35,7 @@ contract Donation{
         require(msg.value>0,"Invalid Value");
         Project projectAddress=Project(_project);
         require(projectAddress.alive()==true,"This project is not available.");
-        address reciever=projectAddress.owner();
+        address reciever=projectAddress.wallet();
 
         donationList[projectAddress]+=msg.value;
         projectAddress.donate(msg.value);
@@ -45,7 +45,7 @@ contract Donation{
     }
 
     //get Total Donation
-    function getTotalDonation() public view onlyOwner returns(uint){
+    function getTotal() public view onlyOwner returns(uint){
         //requires
         return totalDonation;
     }

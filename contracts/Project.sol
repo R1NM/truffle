@@ -8,6 +8,7 @@ contract Project{
 
     //variables
     address public owner;
+    address public wallet;
     uint public total;
     uint public target;
     bool public alive=false;
@@ -20,13 +21,14 @@ contract Project{
 
     //modifier
     modifier onlyOwner{
-        require(msg.sender==owner,"Access Denied"); //then, excute functions
+        require(msg.sender==owner,"Access Denied1"); //then, excute functions
         _;
     }
 
     //constructor
-    constructor(){
+    constructor(address _wallet){
         owner=msg.sender;
+        wallet=_wallet;
     }
 
     //functions
@@ -54,6 +56,11 @@ contract Project{
         // require(_amount>0,"Invalid Value");
 
         total+=_amount;
+    }
+
+    function distribute(uint _value) public  onlyOwner{
+        total-=_value;
+
     }
 
 }
